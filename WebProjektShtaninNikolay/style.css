@@ -1,0 +1,19 @@
+* {
+    /*color:#0B9880;*/
+    background-color: black;
+    color:lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 50px;
+}
+form {
+    align-self: flex-end;
+    padding: 30px;
+}
+#navigation {
+    background-color: blue;
+    text-align:left;
+    align-content: space-between;
+    color: yellow;
+}
