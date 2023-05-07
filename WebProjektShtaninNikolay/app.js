@@ -1,25 +1,31 @@
 //Crazy Nicky
-import data from "dest/input.json" assert {type: json};
-const fs = require('fs');
-const { type } = require('os');
-const { json } = require('stream/consumers');
-var color = "#0B9880";
-let okBtn = index.querySelector('#okBtn');
-okBtn.addEventListener('click', function(){
-    color = index.querySelector('#color');
-    stylesheet.color = color;
-});
+//import data from "./dest/input.json" assert {type: json};
+const yearElement = document.getElementById('year');
+const currentYear = new Date().getFullYear();
+yearElement.textContent = currentYear;
 
-let sendBtn = contat.querySelector('#sendBtn');
+     
+
+let first = null;
+let second = null;
+let result = null;
+function sum(first, second){
+        return first + second;
+}
+
+//var color = "#0B9880";
+document.querySelector('#okBtn').addEventListener('click', function() {document.color = document.querySelector('#color')});
+
+let sendBtn = document.querySelector('#sendBtn');
 sendBtn.addEventListener('click', sendRecord);
 function sendRecord(){
-    let anrede = contact.querySelector('#anrede');
-    let firstname = contact.querySelector('#firstname');
-    let secondname = contact.querySelector('#secondname');
-    let email = contact.querySelector('#email');
-    let nachricht = contact.querySelector('#nachricht');
-    let newRecord = new {color,anrede,firstname,secondname,email,nachricht};
-    data.push(newRecord);
-    fs.writeFileSync('dest/input.json', JSON.stringify(data.default));
+    let anrede = document.querySelector('#anrede');
+    let firstname = document.querySelector('#firstname');
+    let secondname = document.querySelector('#secondname');
+    let email = document.querySelector('#email');
+    let nachricht = document.querySelector('#nachricht');
+    let newRecord = new {anrede,firstname,secondname,email,nachricht};
+    //data.push(newRecord);
+    fs.writeFileSync('./dest/input.json', JSON.stringify(newRecord));
 }
 

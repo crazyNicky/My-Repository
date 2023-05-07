@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content:right;
+  }
+  
+  .social-links {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+  }
+  
+  .social-links li {
+    flex: 1;
+    display: inline-block;
+    margin-right: 1%;
+  }
+  
+  .social-links li:last-child {
+    margin-right: 0;
+  }
+  .social-links i {
+    width: 48px;
+    height: 48px;
+    display:flex;
+    background-position: center;
+  }
+  
+  .fa-twitter {
+    background-image: url('img/twitter.png');
+  }
+  
+  .fa-facebook-f {
+    background-image: url('img/facebook.png');
+  }
+  
+  .fa-vk {
+    background-image: url('img/vk.png');
+  }

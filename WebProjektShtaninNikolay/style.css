@@ -1,19 +1,57 @@
 * {
-    /*color:#0B9880;*/
-    background-color: black;
-    color:lightgreen;
+    background-color:#bab1b1;
+    color:#0B9880;
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    margin: 50px;
+    margin: 3%;
+    align-content: center;
+}
+.header {
+  display:flex;
+  align-items: center;
+  justify-content:right;
+}
+.header h1 {
+  margin-right: auto;
+  justify-content: left;
+}
+.keypad {
+    display: block;
+    justify-self: center;
+    justify-content: center;
+}
+table tr td {
+    vertical-align: top;
 }
 form {
     align-self: flex-end;
     padding: 30px;
 }
-#navigation {
-    background-color: blue;
-    text-align:left;
-    align-content: space-between;
-    color: yellow;
+.projects {
+  display: flex;
+  height: 500px;
+}
+.arduino {
+  flex: 1;
+  padding: 1%;
+  margin: 1%;
+  background-color: lightcoral;
+  background-image:"./img/tresor.png";
+}
+.frontend {
+  flex: 1;
+  padding: 1%;
+  margin: 1%;
+  background-color: bisque;
+}
+.git {
+  flex: 1;
+  padding: 1%;
+  margin: 1%;
+  background-color: lightyellow;
+}
+h6 {
+  flex: 1;
+  margin: 1%;
 }
